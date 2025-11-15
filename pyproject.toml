@@ -1,0 +1,44 @@
+[project]
+name = "sourcandy"
+version = "0.1.0"
+description = "A framework for hallucination mitigation in LLMs. Verify, correct, and re-verify."
+authors = [
+    { name = "Soumya Sourav Das", email = "soumyasourav0311@gmail.com" },
+    { name = "Devyanshi Bansal", email = "devyanshib8@gmail.com" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+# Core dependencies
+dependencies = [
+    "pydantic>=2.0",
+    "langchain",
+]
+
+[project.urls]
+Homepage = "https://github.com/celestial317/sourcandy"
+"Bug Tracker" = "https://github.com/celestial317/sourcandy/issues"
+
+[project.optional-dependencies]
+# Dependencies for specific verifiers and tools
+tools = [
+    "wikipedia",
+    "duckduckgo-search",
+    "langchain-community",
+    "langchain-google-genai",
+]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
