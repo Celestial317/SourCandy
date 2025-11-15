@@ -1,7 +1,7 @@
 [project]
 name = "sourcandy"
 version = "0.1.0"
-description = "A framework for hallucination mitigation in LLMs. Verify, correct, and re-verify."
+description = "No one likes sourness in candy right? SourCandy is a framework for hallucination mitigation in LLMs. Verify, correct, and re-verify."
 authors = [
     { name = "Soumya Sourav Das", email = "soumyasourav0311@gmail.com" },
     { name = "Devyanshi Bansal", email = "devyanshib8@gmail.com" },
