@@ -42,7 +42,7 @@ class SourCandyResponse(BaseModel):
 
 # ---
 # Abstract Base Classes (ABCs)
-# These are the "contracts" all our modules must follow.
+# These are the contracts all our modules must follow.
 # ---
 
 class BaseVerifier(ABC):
@@ -66,7 +66,7 @@ class BaseVerifier(ABC):
 class BaseCorrector(ABC):
     """Abstract Base Class for all Correctors."""
     
-    @abstractabstractmethod
+    @abstractmethod
     def correct(self, text_input: str, result: VerificationResult) -> CorrectionResult:
         """
         Attempts to fix the "sourness" reported in the VerificationResult.
