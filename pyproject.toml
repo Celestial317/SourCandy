@@ -19,7 +19,7 @@ classifiers = [
 # Core dependencies
 dependencies = [
     "pydantic>=2.0",
-    "langchain",
+    "numpy>=1.24.0",
 ]
 
 [project.urls]
@@ -27,16 +27,32 @@ Homepage = "https://github.com/celestial317/sourcandy"
 "Bug Tracker" = "https://github.com/celestial317/sourcandy/issues"
 
 [project.optional-dependencies]
+# Dependencies for visualization
+viz = [
+    "matplotlib>=3.6.0",
+    "seaborn>=0.12.0",
+]
 # Dependencies for specific verifiers and tools
 tools = [
     "wikipedia",
     "duckduckgo-search",
+    "langchain",
     "langchain-community",
     "langchain-google-genai",
 ]
 dev = [
     "pytest",
     "ruff",
+]
+# All optional dependencies
+all = [
+    "matplotlib>=3.6.0",
+    "seaborn>=0.12.0",
+    "wikipedia",
+    "duckduckgo-search",
+    "langchain",
+    "langchain-community",
+    "langchain-google-genai",
 ]
 
 [build-system]
